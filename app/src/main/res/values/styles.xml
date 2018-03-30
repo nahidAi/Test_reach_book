@@ -11,7 +11,7 @@
     <style name="myStyle" parent="Theme.AppCompat.NoActionBar">
         <item name="android:textColorPrimary">@color/black</item>
         //تغییر رنگ تکست کالر سکندری (رنگ سه نقطه) t
-        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textColorSecondary">@color/white</item>
 
 
     </style>

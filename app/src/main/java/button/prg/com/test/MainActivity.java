@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity{
 
 		Toolbar toolbar = (Toolbar) findViewById( R.id.app_bar );
 		toolbar.setTitle("قدرتمندترین ماشین پولسازی دنیا");
+		toolbar.setTitleTextColor(0xFFFFFFFF);
 		setSupportActionBar( toolbar );
 
 

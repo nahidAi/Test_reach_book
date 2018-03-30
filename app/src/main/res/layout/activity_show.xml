@@ -7,7 +7,8 @@
         android:id="@+id/image_show"
         android:layout_width="match_parent"
         android:layout_height="@dimen/flexible_space_image_height"
-        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
         android:src="@drawable/rec_image" />
 
     <View

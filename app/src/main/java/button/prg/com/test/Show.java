@@ -55,14 +55,14 @@ public class Show extends BaseActivity implements ObservableScrollViewCallbacks 
 		mScrollView = (ObservableScrollView) findViewById(R.id.scroll);
 		mScrollView.setScrollViewCallbacks(this);
 		mTitleView = (TextView) findViewById(R.id.title);
-		mTitleView.setText(title);
+		//mTitleView.setText(title);
 		mImageView.setImageResource( location );
 		text.setText( Html.fromHtml(body) );
 		int size=db.returnsize();
 		text.setTextSize( size );
 
 
-		setTitle(title);
+		//setTitle(title);
 		mFab = (FloatingActionButton) findViewById(R.id.fab);
 
 		value=db.fav_value( id );
