@@ -47,7 +47,7 @@ public class Favorite extends AppCompatActivity{
 			InfoNav cur = new InfoNav();
 			cur.title = db.get( i ).getName();
 			String uri = "@drawable/" + db.get( i ).getImage();
-			switch (cur.iconid = getResources().getIdentifier(uri, null, getPackageName())) {
+			switch (cur.iconId = getResources().getIdentifier(uri, null, getPackageName())) {
 			}
 			cur.body = db.get( i ).getBody();
 			data.add( cur );

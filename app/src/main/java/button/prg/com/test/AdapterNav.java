@@ -42,7 +42,7 @@ public class AdapterNav extends RecyclerView.Adapter<AdapterNav.ViewHolder>{
 	public void onBindViewHolder (ViewHolder holder, int position) {
 		InfoNav cur = data.get( position );
 		holder.title.setText( cur.title );
-		holder.image.setImageResource( cur.iconid );
+		holder.image.setImageResource( cur.iconId);
 		Typeface typeface = Typeface.createFromAsset( context.getAssets(), "zienab.ttf" );
 		holder.title.setTypeface( typeface );
 	}

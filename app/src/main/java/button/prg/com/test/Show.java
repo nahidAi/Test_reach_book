@@ -34,6 +34,7 @@ public class Show extends BaseActivity implements ObservableScrollViewCallbacks 
 	private boolean mFabIsShown;
 	public static int location;
 	public static String title;
+	public static boolean isFree;
 	public static String body;
 	public static int id;
 	public int value;

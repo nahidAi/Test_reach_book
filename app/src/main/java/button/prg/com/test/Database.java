@@ -70,7 +70,7 @@ public class Database extends SQLiteOpenHelper{
 	{
 		SQLiteDatabase db = this.getReadableDatabase();
 		List<info_Data> data = new ArrayList<>(  );
-		String query = "SELECT "+info_db.Data_Name+","+info_db.Data_Body+","+info_db.Data_Fav+","+info_db.Data_Image+" FROM tbl";
+		String query = "SELECT "+info_db.Data_Name+","+info_db.Data_Body+","+info_db.Data_Fav+","+info_db.Data_Image+","+info_db.Data_Free+" FROM tbl";
 		Cursor cursor = db.rawQuery( query,null );
 		if (cursor.moveToFirst())
 		{
@@ -80,6 +80,8 @@ public class Database extends SQLiteOpenHelper{
 				info.setBody( cursor.getString( cursor.getColumnIndex( info_db.Data_Body ) ) );
 				info.setFav( cursor.getInt( cursor.getColumnIndex( info_db.Data_Fav ) ) );
 				info.setImage( cursor.getString( cursor.getColumnIndex( info_db.Data_Image ) ) );
+				boolean value = cursor.getInt(cursor.getColumnIndex(info_db.Data_Free))> 0;
+				info.setIsFree(value);
 				data.add( info );
 
 			}while (cursor.moveToNext());
@@ -188,4 +190,5 @@ public class Database extends SQLiteOpenHelper{
 		db.execSQL( query );
 		db.close();
 	}
+
 }

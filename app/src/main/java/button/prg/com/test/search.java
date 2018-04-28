@@ -88,7 +88,7 @@ public class search extends AppCompatActivity{
 			cur.title = db.get( i ).getName();
 			String uri = "@drawable/" + db.get( i ).getImage();
 			int iconid = getResources().getIdentifier( uri, null, getPackageName() );
-			cur.iconid = iconid;
+			cur.iconId = iconid;
 			cur.body = db.get( i ).getBody();
 			data.add( cur );
 

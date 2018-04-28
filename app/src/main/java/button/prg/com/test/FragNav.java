@@ -73,7 +73,7 @@ public class FragNav extends Fragment {
         for (int i = 0; i < title.length && i < iconid.length; i++) {
             InfoNav infoNav = new InfoNav();
             infoNav.title = title[i];
-            infoNav.iconid = iconid[i];
+            infoNav.iconId = iconid[i];
             data.add(infoNav);
         }
 

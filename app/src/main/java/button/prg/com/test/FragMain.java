@@ -26,6 +26,8 @@ import jp.wasabeef.recyclerview.adapters.ScaleInAnimationAdapter;
 public class FragMain extends Fragment{
 
 
+
+
 	public FragMain () {
 
 		// Required empty public constructor
@@ -96,8 +98,9 @@ public class FragMain extends Fragment{
 			InfoNav cur =new InfoNav();
 			cur.title = db.get( i ).getName();
 			String uri = "@drawable/"+db.get( i ).getImage();
-			cur.iconid = getResources().getIdentifier( uri,null,getActivity().getPackageName() );
+			cur.iconId = getResources().getIdentifier( uri,null,getActivity().getPackageName() );
 			cur.body=db.get( i ).getBody();
+			cur.isFree = db.get(i).getIsFree();
 			data.add( cur );
 
 		}
@@ -105,5 +108,6 @@ public class FragMain extends Fragment{
 		return data;
 
 	}
+
 
 }

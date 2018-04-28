@@ -5,6 +5,19 @@ public class info_Data{
 	public  String name;
 	public  int fav;
 	public  String image;
+	public boolean isFree;
+
+	public boolean getIsFree() {
+		return isFree;
+	}
+
+	public void setIsFree(boolean isFree) {
+		this.isFree = isFree;
+	}
+
+
+
+
 
 	public String getBody () {
 		return body;
@@ -37,5 +50,6 @@ public class info_Data{
 	public void setImage (String image) {
 		this.image = image;
 	}
+
 }
 
